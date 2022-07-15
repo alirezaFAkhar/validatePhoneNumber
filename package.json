@@ -1,0 +1,15 @@
+{
+  "name": "validatePhoneNumber",
+  "version": "0.1.0",
+  "main": "Register.html",
+  "repository": "git@github.com:alirezaFAkhar/validatePhoneNumber.git",
+  "author": "alirezaFAkhar, Mohammad Honarvar <honarvar.info@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-no-only-tests": "^2.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.1"
+  }
+}
