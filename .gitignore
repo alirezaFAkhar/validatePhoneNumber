@@ -1,0 +1,10 @@
+node_modules
+lerna-debug.log
+*.tgz
+*.tsbuildinfo
+.DS_Store
+.vscode
+*.js
+*.d.ts
+*.d.ts.map
+*.js.map
