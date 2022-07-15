@@ -4,7 +4,5 @@ lerna-debug.log
 *.tsbuildinfo
 .DS_Store
 .vscode
-*.js
-*.d.ts
-*.d.ts.map
-*.js.map
+
+assets/
