@@ -18,14 +18,24 @@ function validatePhoneNumber(input_str) {
 
   return phoneRegex.test(input_str);
 }
+function CheckPassword(input_str) {
+  const passwordRegax = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+  return passwordRegax.test(input_str);
+}
 
 function validateForm(event) {
   const phone = document.getElementById('email_phone').value;
+  const password = document.getElementById('password').value;
   if (!validatePhoneNumber(phone)) {
     document.getElementById('phone_error').classList.remove('hidden');
   } else {
+    if (!CheckPassword(password)) {
+      document.getElementById('password_error').classList.remove('hidden');
+    } else {
+      document.getElementById('password_error').classList.add('hidden');
+      alert('validation password success');
+    }
     document.getElementById('phone_error').classList.add('hidden');
-    alert('validation success');
   }
   event.preventDefault();
 }
